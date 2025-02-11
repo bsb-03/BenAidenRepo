@@ -70,4 +70,8 @@ public class Book {
 	public void setPrice(double price) {
 		this.price = price;
 	}
+	
+	public String toString() { // overridden toString()
+		return ("Title: " + this.getTitle() + ", Author: " + this.getAuthor() + ", ISBN: " + this.ISBN + ", Price: " + this.getPrice());
+	}
 }
