@@ -22,8 +22,7 @@ public class Library {
 	}
 	
 	public boolean removeBook(Book book) {
-		int i=0;
-		for(i=0;i<=5;i++)
+		for(int i=0;i<=5;i++)
 		{
 			if(bookArray[i] == book)
 			{
@@ -32,7 +31,18 @@ public class Library {
 				return true;
 			}
 		}
-		System.out.prinln("The requested book could not be found in this library!")
+		System.out.println("The requested book could not be found in this library!")
 		return false;
 	}
+	
+	public Book searchByISBN(String ISBN) {
+		for(int i=0;i<=5;i++)
+		{
+			if(bookArray[i].getISBN() == ISBN)
+				return bookArray[i]
+		}
+		System.out.println("No books with a matching ISBN code were found in this library.")
+		return null;
+	}
+	
 }
