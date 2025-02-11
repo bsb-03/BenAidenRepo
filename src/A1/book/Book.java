@@ -74,4 +74,14 @@ public class Book {
 	public String toString() { // overridden toString()
 		return ("Title: " + this.getTitle() + ", Author: " + this.getAuthor() + ", ISBN: " + this.ISBN + ", Price: " + this.getPrice());
 	}
+	
+	public boolean equals(Object other) { // overridden equals
+		Book cmpBook = (Book) other;
+		
+		if(this.getISBN() == cmpBook.getISBN()) {
+			return true;
+		}
+		
+		return false;
+	}
 }
