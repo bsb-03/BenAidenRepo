@@ -1,20 +1,24 @@
 package A1.library;
+import A1.book.Book;
 
 public class Library {
-	private int[5] Book;
+	private Book[] bookArray = new Book[5];
 	private int count;
 	
 	public boolean addBook(Book book){
 		int i=0;
 		for(i=0; i<=5;i++)
 		{
-			if(Book[i] == null)
+			if(bookArray[i] == null)
 				break;
 		}
-		if(i==5)
+		if(i==5) {
 			System.out.println("Your library is full!");
-		Book[i] = new Book;
+			return false;
+		}
+		bookArray[i] = book;
 		count++;
+		return true;
 	}
 	
 }
