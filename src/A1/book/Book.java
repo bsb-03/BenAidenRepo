@@ -28,6 +28,17 @@ public class Book {
 		return newBook;
 	}
 	
+	public static Book newBook(Book bookToCopy) { // copy constructor
+		Book newBook = new Book();
+		
+		newBook.title = bookToCopy.getTitle();
+		newBook.author = bookToCopy.getAuthor();
+		newBook.ISBN = bookToCopy.getISBN();
+		newBook.price = bookToCopy.getPrice();
+		
+		return newBook;
+	}
+	
 	public String getTitle() {
 		return title;
 	}
