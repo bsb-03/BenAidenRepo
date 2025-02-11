@@ -21,4 +21,18 @@ public class Library {
 		return true;
 	}
 	
+	public boolean removeBook(Book book) {
+		int i=0;
+		for(i=0;i<=5;i++)
+		{
+			if(bookArray[i] == book)
+			{
+				bookArray[i] = null;
+				count--;
+				return true;
+			}
+		}
+		System.out.prinln("The requested book could not be found in this library!")
+		return false;
+	}
 }
