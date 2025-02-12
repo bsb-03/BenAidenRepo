@@ -28,7 +28,7 @@ import A1.library.*;
 									"fake name",
 									"fake isbn",
 									10000.00);
-		
+		System.out.println(myLibrary.getCount());
 		System.out.println("Adding books...");
 		if(myLibrary.addBook(myBook1) && // add books to library
 				myLibrary.addBook(myBook2) &&
@@ -38,6 +38,7 @@ import A1.library.*;
 		
 		System.out.println("\n--BOOKS--");
 		myLibrary.displayBooks();
+		System.out.println(myLibrary.getCount());
 		System.out.println("---------\n");
 		
 		System.out.println("--Searching for Book--");

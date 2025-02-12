@@ -5,6 +5,11 @@ public class Library {
 	private Book[] bookArray = new Book[5];
 	private int count = 0;
 	
+	/** public boolean addBook - This method adds a book object to a library.
+	 * 
+	 * @param book - This is the book object to be added to the library
+	 * @return
+	 */
 	public boolean addBook(Book book){
 		int i=0;
 		for(i=0; i<5;i++)
@@ -20,7 +25,7 @@ public class Library {
 		this.setCount(this.getCount() + 1);
 		return true;
 	}
-	
+
 	public boolean removeBook(Book book) {
 		for(int i=0;i<5;i++)
 		{
