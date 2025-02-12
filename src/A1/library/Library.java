@@ -22,7 +22,7 @@ public class Library {
 	}
 	
 	public boolean removeBook(Book book) {
-		for(int i=0;i<=5;i++)
+		for(int i=0;i<5;i++)
 		{
 			if(bookArray[i] == book)
 			{
@@ -31,7 +31,7 @@ public class Library {
 				return true;
 			}
 		}
-		System.out.println("The requested book could not be found in this library!");
+		//System.out.println("The requested book could not be found in this library!");
 		return false;
 	}
 	
@@ -43,14 +43,16 @@ public class Library {
 				}
 			}
 		}
-		System.out.println("No books with a matching ISBN code were found in this library.");
+		//System.out.println("No books with a matching ISBN code were found in this library.");
 		return null;
 	}
 	
 	public void displayBooks() {
 		for(int i=0;i<5;i++)
 		{
-			System.out.println(bookArray[i]);
+			if(bookArray[i] != null) {
+				System.out.println(bookArray[i]);
+			}
 		}
 	}
 }

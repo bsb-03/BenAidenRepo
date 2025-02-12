@@ -35,7 +35,7 @@ import A1.library.*;
 		
 		myLibrary.displayBooks();
 		
-		//System.out.println(myLibrary.searchByISBN("0345391802"));
+		System.out.println(myLibrary.searchByISBN("0345391802"));
 		System.out.println(myLibrary.removeBook(myBook3));
 		System.out.println(myLibrary.removeBook(myBook4));
 		myLibrary.displayBooks();
