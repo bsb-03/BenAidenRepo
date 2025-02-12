@@ -31,7 +31,7 @@ public class Library {
 				return true;
 			}
 		}
-		System.out.println("The requested book could not be found in this library!")
+		System.out.println("The requested book could not be found in this library!");
 		return false;
 	}
 	
@@ -41,7 +41,7 @@ public class Library {
 			if(bookArray[i].getISBN() == ISBN)
 				return bookArray[i]
 		}
-		System.out.println("No books with a matching ISBN code were found in this library.")
+		System.out.println("No books with a matching ISBN code were found in this library.");
 		return null;
 	}
 	
