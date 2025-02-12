@@ -24,11 +24,20 @@ import A1.library.*;
 									"H. G. Wells", 
 									"‎1505260795",
 									7.75);
+		Book myBook4 = Book.newBook("fake book",
+									"fake name",
+									"fake isbn",
+									10000.00);
 		
 		myLibrary.addBook(myBook1); // add books to library
 		myLibrary.addBook(myBook2);
 		myLibrary.addBook(myBook3);
 		
+		myLibrary.displayBooks();
 		
+		//System.out.println(myLibrary.searchByISBN("0345391802"));
+		System.out.println(myLibrary.removeBook(myBook3));
+		System.out.println(myLibrary.removeBook(myBook4));
+		myLibrary.displayBooks();
 	}
 }

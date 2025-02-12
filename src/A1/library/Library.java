@@ -7,7 +7,7 @@ public class Library {
 	
 	public boolean addBook(Book book){
 		int i=0;
-		for(i=0; i<=5;i++)
+		for(i=0; i<5;i++)
 		{
 			if(bookArray[i] == null)
 				break;
@@ -36,17 +36,19 @@ public class Library {
 	}
 	
 	public Book searchByISBN(String ISBN) {
-		for(int i=0;i<=5;i++)
-		{
-			if(bookArray[i].getISBN() == ISBN)
-				return bookArray[i];
+		for(int i=0;i<5;i++) {
+			if(bookArray[i] != null) {
+				if(bookArray[i].getISBN() == ISBN) {
+					return bookArray[i];
+				}
+			}
 		}
 		System.out.println("No books with a matching ISBN code were found in this library.");
 		return null;
 	}
 	
 	public void displayBooks() {
-		for(int i=0;i<=5;i++)
+		for(int i=0;i<5;i++)
 		{
 			System.out.println(bookArray[i]);
 		}
