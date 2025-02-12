@@ -6,18 +6,18 @@ public class Book {
 	private String ISBN;
 	private double price;
 	
-	public Book newBook() { // default constructor
+	public static Book newBook() { // default constructor
 		Book newBook = new Book();
 		
-		newBook.title = "Unknown"; 
-		newBook.author = "Unknown";
-		newBook.ISBN = "Unknown";
-		newBook.price = 0.0;
+		newBook.setTitle("Unknown"); 
+		newBook.setAuthor("Unknown");
+		newBook.setISBN("Unknown");
+		newBook.setPrice(0.0);
 		
 		return newBook;
 	}
 	
-	public Book newBook(String title, String author, String ISBN, double price) { // parameterized constructor
+	public static Book newBook(String title, String author, String ISBN, double price) { // parameterized constructor
 		Book newBook = new Book();
 		
 		newBook.title = title;
