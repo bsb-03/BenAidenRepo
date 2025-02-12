@@ -6,7 +6,7 @@ public class Book {
 	private String ISBN;
 	private double price;
 	
-	public static Book newBook() { // default constructor
+	public Book newBook() { // default constructor
 		Book newBook = new Book();
 		
 		newBook.title = "Unknown"; 
@@ -17,7 +17,7 @@ public class Book {
 		return newBook;
 	}
 	
-	public static Book newBook(String title, String author, String ISBN, double price) { // parameterized constructor
+	public Book newBook(String title, String author, String ISBN, double price) { // parameterized constructor
 		Book newBook = new Book();
 		
 		newBook.title = title;
@@ -28,7 +28,7 @@ public class Book {
 		return newBook;
 	}
 	
-	public static Book newBook(Book bookToCopy) { // copy constructor
+	public Book newBook(Book bookToCopy) { // copy constructor
 		Book newBook = new Book();
 		
 		newBook.title = bookToCopy.getTitle();

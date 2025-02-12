@@ -39,7 +39,7 @@ public class Library {
 		for(int i=0;i<=5;i++)
 		{
 			if(bookArray[i].getISBN() == ISBN)
-				return bookArray[i]
+				return bookArray[i];
 		}
 		System.out.println("No books with a matching ISBN code were found in this library.");
 		return null;
