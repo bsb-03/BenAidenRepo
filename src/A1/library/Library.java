@@ -5,7 +5,7 @@ public class Library {
 	private Book[] bookArray = new Book[5];
 	private int count = 0;
 	
-	/** public boolean addBook - This method adds a book object to a library.
+	/** public boolean addBook() - This method adds a book object to a library.
 	 * 
 	 * @param book - This is the book object to be added to the library
 	 * @return
@@ -26,7 +26,7 @@ public class Library {
 		return true;
 	}
 
-	/** public boolean removeBook - This method removes a book object from a library.
+	/** public boolean removeBook() - This method removes a book object from a library.
 	 * 
 	 * @param book - This is the book object to be removed from the library
 	 * @return
@@ -45,7 +45,7 @@ public class Library {
 		return false;
 	}
 	
-	/** public Book searchByISBN - This method searches a library for a book with an ISBN code that matches the input.
+	/** public Book searchByISBN() - This method searches a library for a book with an ISBN code that matches the input.
 	 * 
 	 * @param ISBN - This is the input ISBN code that is to be searched for within the library.
 	 * @return
@@ -81,10 +81,19 @@ public class Library {
 		}
 	}
 
+	/** public int getCount() - This is the getter method for the count attribute within the library class.
+	 * 
+	 * @return
+	 */
 	public int getCount() {
 		return count;
 	}
 
+	/** public int setCount() - This is the setter method for the count attribute within the library class.
+	 * 
+	 * @param int count - This is the amount you wish to set the count to.
+	 * @return
+	 */
 	public void setCount(int count) {
 		this.count = count;
 	}
