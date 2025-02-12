@@ -3,7 +3,7 @@ import A1.book.Book;
 
 public class Library {
 	private Book[] bookArray = new Book[5];
-	private int count;
+	private int count = 0;
 	
 	public boolean addBook(Book book){
 		int i=0;
@@ -36,14 +36,20 @@ public class Library {
 	}
 	
 	public Book searchByISBN(String ISBN) {
-		for(int i=0;i<5;i++) {
+		System.out.println("---DEBUGGING searchByISBN---");
+		System.out.println("ISBN to find: " + ISBN);
+		Book cmpBook = null;
+		for(int i = 0; i < 5; i++) {
 			if(bookArray[i] != null) {
-				if(bookArray[i].getISBN() == ISBN) {
-					return bookArray[i];
+				cmpBook = bookArray[i];
+				System.out.println("Comparing: " + cmpBook.getISBN() + " " + ISBN);
+				
+				if((cmpBook.getISBN()).equals(ISBN)) {
+					return cmpBook;
 				}
 			}
 		}
-		//System.out.println("No books with a matching ISBN code were found in this library.");
+		
 		return null;
 	}
 	
