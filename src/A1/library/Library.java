@@ -68,6 +68,10 @@ public class Library {
 		return null;
 	}
 	
+	/** public void displayBooks() - This method displays all of the book objects in a library
+	 * 
+	 * @return
+	 */
 	public void displayBooks() {
 		for(int i=0;i<5;i++)
 		{
