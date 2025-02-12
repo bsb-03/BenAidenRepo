@@ -45,6 +45,11 @@ public class Library {
 		return false;
 	}
 	
+	/** public Book searchByISBN - This method searches a library for a book with an ISBN code that matches the input.
+	 * 
+	 * @param ISBN - This is the input ISBN code that is to be searched for within the library.
+	 * @return
+	 */
 	public Book searchByISBN(String ISBN) {
 		//System.out.println("---DEBUGGING searchByISBN---");
 		//System.out.println("ISBN to find: " + ISBN);
