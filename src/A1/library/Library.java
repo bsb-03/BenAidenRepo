@@ -26,6 +26,11 @@ public class Library {
 		return true;
 	}
 
+	/** public boolean removeBook - This method removes a book object from a library.
+	 * 
+	 * @param book - This is the book object to be removed from the library
+	 * @return
+	 */
 	public boolean removeBook(Book book) {
 		for(int i=0;i<5;i++)
 		{
