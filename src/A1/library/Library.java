@@ -36,13 +36,13 @@ public class Library {
 	}
 	
 	public Book searchByISBN(String ISBN) {
-		System.out.println("---DEBUGGING searchByISBN---");
-		System.out.println("ISBN to find: " + ISBN);
+		//System.out.println("---DEBUGGING searchByISBN---");
+		//System.out.println("ISBN to find: " + ISBN);
 		Book cmpBook = null;
 		for(int i = 0; i < 5; i++) {
 			if(bookArray[i] != null) {
 				cmpBook = bookArray[i];
-				System.out.println("Comparing: " + cmpBook.getISBN() + " " + ISBN);
+				//System.out.println("Comparing: " + cmpBook.getISBN() + " " + ISBN);
 				
 				if((cmpBook.getISBN()).equals(ISBN)) {
 					return cmpBook;

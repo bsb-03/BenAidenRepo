@@ -29,15 +29,44 @@ import A1.library.*;
 									"fake isbn",
 									10000.00);
 		
-		myLibrary.addBook(myBook1); // add books to library
-		myLibrary.addBook(myBook2);
-		myLibrary.addBook(myBook3);
+		System.out.println("Adding books...");
+		if(myLibrary.addBook(myBook1) && // add books to library
+				myLibrary.addBook(myBook2) &&
+				myLibrary.addBook(myBook3)) {
+			System.out.println("Books added!");
+		}
 		
+		System.out.println("\n--BOOKS--");
 		myLibrary.displayBooks();
+		System.out.println("---------\n");
 		
+		System.out.println("--Searching for Book--");
+		System.out.println(myBook1);
+		System.out.println("Searching...");
 		System.out.println(myLibrary.searchByISBN(myBook1.getISBN()));
-		System.out.println(myLibrary.removeBook(myBook3));
-		System.out.println(myLibrary.removeBook(myBook4));
+		System.out.println("----------------------");
+		
+		System.out.println("Removing: " + myBook3);
+		if(myLibrary.removeBook(myBook3)) {
+			System.out.println("Removed Successfully!");
+		}
+		else {
+			System.out.println("Could not remove!");
+		}
+		System.out.println("\n");
+		
+		
+		System.out.println("Removing: " + myBook4);
+		if(myLibrary.removeBook(myBook3)) {
+			System.out.println("Removed Successfully!");
+		}
+		else {
+			System.out.println("Could not remove!");
+		}
+		System.out.println("\n");
+		
+		System.out.println("\n--BOOKS--");
 		myLibrary.displayBooks();
+		System.out.println("---------\n");
 	}
 }
