@@ -25,7 +25,10 @@ import A1.library.*;
 									"‎1505260795",
 									7.75);
 		
+		myLibrary.addBook(myBook1); // add books to library
+		myLibrary.addBook(myBook2);
+		myLibrary.addBook(myBook3);
 		
-		System.out.println(myBook1);
+		
 	}
 }
