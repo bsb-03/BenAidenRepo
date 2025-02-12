@@ -17,7 +17,7 @@ public class Library {
 			return false;
 		}
 		bookArray[i] = book;
-		count++;
+		this.setCount(this.getCount() + 1);
 		return true;
 	}
 	
@@ -27,7 +27,7 @@ public class Library {
 			if(bookArray[i] == book)
 			{
 				bookArray[i] = null;
-				count--;
+				setCount(getCount() - 1);
 				return true;
 			}
 		}
@@ -60,5 +60,13 @@ public class Library {
 				System.out.println(bookArray[i]);
 			}
 		}
+	}
+
+	public int getCount() {
+		return count;
+	}
+
+	public void setCount(int count) {
+		this.count = count;
 	}
 }
